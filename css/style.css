@@ -16,12 +16,62 @@
        url('../fonts/poppins-v15-latin-500.woff') format('woff');
 }
 
-html {
+html, body {
   margin: 0;
   padding: 0;
   font-family: Poppins, Arial, sans-serif;
+  background-color: #f8f8f8;
 }
 
-body {
-  background-color: #f8f8f8;
+/*card*/
+
+.card {
+  max-width: 451px;
+  margin: 0 auto;
+  margin-top: 150px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.card__top {
+  padding: 24px;
+  min-height: 64px;
+  background-color: rgba(85, 110, 230, 0.25);
+  background-image: url("./../img/girl-in-comp.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.card__heading {
+  margin: 0;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #556ee6;
+}
+
+.card__text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  color: #556ee6;
+}
+
+
+/*For Retina Displays*/
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .card__top {
+    background-image: url("./../img/girl-in-comp@2x.png");
+  }
+
 }
