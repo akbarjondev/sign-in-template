@@ -165,6 +165,28 @@ html, body {
   background-size: contain;
 }
 
+/*signup*/
+
+.signup {
+  margin-top: 36px;
+}
+
+.signup, .copy {
+  font-size: 13px;
+  line-height: 19px;
+  color: #495057;
+  text-align: center;
+}
+
+.copy {
+  margin-top: 16px;
+}
+
+.signup__link {
+  color: #556ee6;
+  text-decoration: none;
+}
+
 /*For Retina Displays*/
 
 @media
