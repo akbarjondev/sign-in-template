@@ -14,28 +14,28 @@
 		</div><!-- End of card__top -->
 
 		<div class="card__body">
-			<img class="card__avatar" src="./img/Avatar_Image.png" srcset="./img/Avatar_Image.png 1x, ./img/Avatar_Image@2x.png 2x" alt="Avatar image">
+			<img class="card__avatar" width="72" height="72" src="./img/Avatar_Image.png" srcset="./img/Avatar_Image.png 1x, ./img/Avatar_Image@2x.png 2x" alt="Avatar image">
 
 			<form class="form card__form" action="https://www.example.com">
 				<div class="form__group">
 					<label class="form__label" for="inputName">Username</label>
-					<input class="form__input" type="text" name="username" id="inputName" autocomplete="off" spellcheck="false">
+					<input class="form__input" type="text" placeholder="Enter username" name="username" id="inputName" autocomplete="off" spellcheck="false" required>
 				</div>
 
 				<div class="form__group">
 					<label class="form__label" for="inputPassword">Password</label>
-					<input class="form__input" type="text" name="password" id="inputPassword" autocomplete="off" spellcheck="false">
+					<input class="form__input" type="text" placeholder="Enter password" name="password" id="inputPassword" autocomplete="off" spellcheck="false" required>
 				</div>
 
 				<div class="form__group form__group-checkbox">
-					<input class="form__input" name="remember" type="checkbox" id="checkbox">
-					<label for="checkbox">Remember me</label>
+					<input class="form__input form__input-checkbox" name="remember" type="checkbox" id="checkbox">
+					<label class="form__label form__label-checkbox" for="checkbox">Remember me</label>
 				</div>
 
 				<button type="submit" class="form__submit">Log in</button>
 			</form>
 
-			<div class="card__forget">Forget your password?</div>
+			<a class="card__forget" href="#">Forget your password?</a>
 
 		</div><!-- End of card__body -->
 	</div><!-- End of card -->
