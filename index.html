@@ -4,9 +4,40 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/style.css">
-	<title>Login</title>
+	<title>Sign in</title>
 </head>
 <body>
+	<div class="card">
+		<div class="card__top">
+			<h1 class="card__heading">Welcome back!</h1>
+			<div class="card__text">Sign in to continue</div>
+		</div><!-- End of card__top -->
 
+		<div class="card__body">
+			<img class="card__avatar" src="./img/Avatar_Image.png" srcset="./img/Avatar_Image.png 1x, ./img/Avatar_Image@2x.png 2x" alt="Avatar image">
+
+			<form class="form card__form" action="https://www.example.com">
+				<div class="form__group">
+					<label class="form__label" for="inputName">Username</label>
+					<input class="form__input" type="text" name="username" id="inputName" autocomplete="off" spellcheck="false">
+				</div>
+
+				<div class="form__group">
+					<label class="form__label" for="inputPassword">Password</label>
+					<input class="form__input" type="text" name="password" id="inputPassword" autocomplete="off" spellcheck="false">
+				</div>
+
+				<div class="form__group form__group-checkbox">
+					<input class="form__input" name="remember" type="checkbox" id="checkbox">
+					<label for="checkbox">Remember me</label>
+				</div>
+
+				<button type="submit" class="form__submit">Log in</button>
+			</form>
+
+			<div class="card__forget">Forget your password?</div>
+
+		</div><!-- End of card__body -->
+	</div><!-- End of card -->
 </body>
 </html>
